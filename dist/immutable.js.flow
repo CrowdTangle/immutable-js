@@ -396,7 +396,7 @@ declare class IndexedSeq<T> extends Seq<number,T> mixins IndexedIterable<T> {
 
 declare class SetSeq<T> extends Seq<T,T> mixins SetIterable<T> {
   static <T>(iter?: ESIterable<T>): IndexedSeq<T>;
-  static of<T>(...values: T[]): SetSeq<T>;
+  static of<T>(...values: T[]): any;
 }
 
 declare class List<T> extends IndexedCollection<T> {
